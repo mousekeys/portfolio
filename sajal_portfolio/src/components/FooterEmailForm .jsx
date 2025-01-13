@@ -56,7 +56,7 @@ function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:border-indigo-500"
+            className="w-full px-3 py-2 border border-gray-700 rounded-md text-black focus:outline-none focus:border-indigo-500"
           />
         </div>
         <div>
@@ -69,7 +69,7 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:border-indigo-500"
+            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-indigo-500"
           />
         </div>
         <div>
@@ -81,7 +81,7 @@ function ContactForm() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:border-indigo-500 h-24"
+            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-indigo-500 h-24"
           />
         </div>
         <button
