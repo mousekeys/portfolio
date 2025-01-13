@@ -31,10 +31,10 @@ const HeroSection = () => {
         backgroundImage: `url(${backgroundImage})`, // Background image for parallax
       }}
     >
-      <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+      <div className=" h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-center">
-          <h1 className="text-5xl font-bold mb-6 leading-tight">
+          <h1 className="font-press text-5xl font-bold mb-6 leading-tight">
             Sajal Poudel
           </h1>
           <h2 className="text-4xl font-bold text-sm md:text-base text-foreground text-lg mb-8">
@@ -50,15 +50,7 @@ const HeroSection = () => {
         </div>
 
 
-        <div className="flex-1 mt-10 lg:mt-0 flex justify-center">
-          <div className="relative bg-purpleLight p-6 rounded-lg shadow-lg">
-            <img
-              src={testImage}
-              alt="Portfolio NFT"
-              className="rounded-lg mb-4"
-            />
-          </div>
-        </div>
+       
 
       </div>
 

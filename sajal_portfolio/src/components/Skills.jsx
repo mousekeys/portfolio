@@ -7,7 +7,7 @@ const skills = [
   
   const Skills = () => {
     return (
-      <div className="bg-[#150A25] text-white p-4 flex justify-between items-center">
+      <div className="bg-gradient-to-b from-[#17153B] to-[#2E236C] text-white p-4 flex justify-between items-center">
         <div className="w-[30%] mx-auto">
           <h2 className="font-pixel text-xl md:text-2xl text-primary mb-10 text-center">STATS</h2>
           {skills.map((skill) => (

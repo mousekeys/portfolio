@@ -10,10 +10,11 @@ export default {
         // Add custom colors or leave as is
       },
       fontFamily: {
-        // Add custom fonts if required
-        sans: ['"Press Start 2P"', "cursive"],
+        
+        sans: [ "cursive",'"roboto"'],
       },
     },
   },
   plugins: [],
 };
+

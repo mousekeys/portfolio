@@ -41,7 +41,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-black text-white p-6 rounded-lg justify-between items-center ">
+    <div className="bg-gradient-to-b from-[#433D8B] to-[#C8ACD6] text-white p-6 rounded-lg justify-between items-center ">
       <div className='bg-gray-800 w-[60%] mx-auto p-6 rounded-lg justify-between items-center'>
       <h1 className="text-2xl font-bold mb-4  mx-auto">CONTACT</h1>
       <p className="mb-6">Would you like to start a new quest together?</p>
@@ -100,7 +100,7 @@ function ContactForm() {
           </li>
           <li>
             <a
-              href="https://github.com/username"
+              href="https://github.com/mousekeys"
               className="hover:underline"
             >
               github.com/mousekeys
@@ -108,10 +108,10 @@ function ContactForm() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/username"
+              href="https://www.linkedin.com/in/sajal-poudel-10915a202"
               className="hover:underline"
             >
-              https://www.linkedin.com/in/sajal-poudel-10915a202
+            linkedin.com/sajal-poudel
             </a>
           </li>
         </ul>

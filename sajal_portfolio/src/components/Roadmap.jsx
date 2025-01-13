@@ -12,7 +12,7 @@ const Roadmap = () => {
   ];
 
   return (
-    <section id="roadmap" className=" bg-gradient-to-b from-[#150A25] to-gray-900 text-white py-16 relative overflow-hidden">
+    <section id="roadmap" className=" bg-gradient-to-b from-[#2E236C] to-[#433D8B] text-white py-16 relative overflow-hidden">
       <div className="w-[80%] container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Roadmap</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
