@@ -13,7 +13,7 @@ const Projects = () => {
 
   return (
     <section id="portfolio" className=" bg-gradient-to-b from-black to-[#17153B] text-white py-16">
-      <div className="container w-[80%] mx-auto text-center">
+      <div className="container  mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Latest Projects Listings</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
           {items.map((item) => (

@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className=" h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-center">
-          <h1 className=" w-[45%] mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg   hover:text-white hover:shadow-green-900 transition">
+          <h1 className="mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg   hover:text-white hover:shadow-green-900 transition">
             Sajal Poudel
           </h1>
           <h2 className="text-4xl font-bold text-sm md:text-base text-foreground text-lg mb-8">

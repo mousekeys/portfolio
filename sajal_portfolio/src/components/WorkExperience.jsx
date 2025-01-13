@@ -56,9 +56,9 @@ const WorkExperience = () => {
   return (
     <div className="flex flex-col pt-28 pb-16 text-white bg-gradient-to-b from-black to-[#16153B] rounded-none max-md:pt-24 relative">
 
-      <h1 className="self-start text-4xl tracking-wider mx-auto text-center text-white">Inventory</h1>
-      <div className="w-[80%] mt-11 mx-auto max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
-        <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1">
+      <h1 className=" self-start text-4xl tracking-wider mx-auto text-center text-white">Inventory</h1>
+      <div className="  mt-11 mx-auto max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
+        <div className="w-[80%] mx-auto grid grid-cols-2 gap-5 max-md:grid-cols-1">
           {experienceData.map((experience, index) => (
             <div key={index} className="flex flex-col">
               <ExperienceCard {...experience} />
