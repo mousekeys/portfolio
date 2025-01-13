@@ -12,8 +12,8 @@ function ContactForm() {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: 'Recipient Name', // Replace with recipient's name
-      to_email: 'recipient@email.com', // Replace with recipient's email
+      to_name: 'Sajal Poudel', 
+      to_email: 'sajalpoudel40@gmail.com', 
       message: message,
     };
 
@@ -95,7 +95,7 @@ function ContactForm() {
         <ul className="list-none">
           <li>
             <a href="mailto:email@example.com" className="hover:underline">
-              email@example.com
+              sajalpoudel40@gmail.com
             </a>
           </li>
           <li>
@@ -103,7 +103,7 @@ function ContactForm() {
               href="https://github.com/username"
               className="hover:underline"
             >
-              github.com/username
+              github.com/mousekeys
             </a>
           </li>
           <li>
@@ -111,7 +111,7 @@ function ContactForm() {
               href="https://www.linkedin.com/in/username"
               className="hover:underline"
             >
-              linkedin.com/in/username
+              https://www.linkedin.com/in/sajal-poudel-10915a202
             </a>
           </li>
         </ul>
