@@ -1,12 +1,12 @@
 
 import React from "react";
-import testImage from "../assets/test.png"; // Foreground image
-import backgroundImage from "../assets/t1.png"; // Parallax background image
+import testImage from "../assets/test.png"; 
+import backgroundImage from "../assets/t1.png"; 
 import { useEffect, useState, useRef } from "react";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
-  const fullText = "M L ENGINEER / COMPUTER ENGINEER";
+  const fullText = "MLL ENGINEER / COMPUTER ENGINEER";
   const indexRef = useRef(0); // To keep track of the current index without triggering renders
   
   useEffect(() => {

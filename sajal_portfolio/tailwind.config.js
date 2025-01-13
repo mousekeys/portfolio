@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         
-        sans: [ "cursive",'"roboto"'],
+        sans: [ "bold",'"game-over"'],
       },
     },
   },

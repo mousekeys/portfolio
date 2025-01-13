@@ -14,7 +14,7 @@ const skills = [
             <div key={skill.name} className="mb-8">
               <div className="flex justify-between mb-3">
                 <span className="font-pixel text-xs text-foreground">{skill.name}</span>
-                <span className="font-pixel text-xs text-accent">{skill.level}/100</span>
+                <span className="font-pixel text-xs text-accent">{skill.level}/100 XP</span>
               </div>
               <div className="h-8 bg-white-400 border-2 border-primary w-full mx-auto">   
                 <div

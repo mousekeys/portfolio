@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Roadmap from "./components/Roadmap";
 import FooterEmailForm from "./components/FooterEmailForm ";
 import Skills from "./components/Skills";
-import{ WorkExperience } from "./components/WorkExperience";
+import WorkExperience from "./components/WorkExperience";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <Hero />
 
-      <Projects/>
+      {/* <Projects/> */}
       <WorkExperience/>
       <Skills />
       <Roadmap />
