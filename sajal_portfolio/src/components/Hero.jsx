@@ -31,7 +31,7 @@ const HeroSection = () => {
         backgroundImage: `url(${backgroundImage})`, // Background image for parallax
       }}
     >
-      <div className=" h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+      <div className="w-[60%] h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-center">
           <h1 className="mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg   hover:text-white hover:shadow-green-900 transition">
