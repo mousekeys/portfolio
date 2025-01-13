@@ -26,7 +26,7 @@ const HeroSection = () => {
   return (
     
     <section
-      className="relative bg-[#150A25] bg-fixed bg-center bg-cover text-white py-16 overflow-hidden"
+      className=" relative w-screen bg-[#150A25] bg-fixed bg-center bg-cover text-white py-16 overflow-hidden"
       style={{
         backgroundImage: `url(${backgroundImage})`, // Background image for parallax
       }}

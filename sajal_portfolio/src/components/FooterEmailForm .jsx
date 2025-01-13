@@ -41,7 +41,7 @@ function ContactForm() {
 
   return (
     <div className="bg-gradient-to-b from-[#433D8B] to-[#C8ACD6] text-white p-6 rounded-lg justify-between items-center ">
-      <div className='bg-gray-800 w-[60%] mx-auto p-6 rounded-lg justify-between items-center'>
+      <div className='bg-gray-800 w-[62%] mx-auto p-6 rounded-lg justify-between items-center'>
       <h1 className="text-2xl font-bold mb-4  mx-auto">CONTACT</h1>
       <p className="mb-6">Would you like to start a new quest together?</p>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -94,7 +94,7 @@ function ContactForm() {
         <ul className="list-none">
           <li>
             <a href="mailto:sajalpoudel40@gmail.com" className="hover:underline">
-              sajalpoudel40@gmail.com
+              Email
             </a>
           </li>
           <li>
@@ -102,7 +102,7 @@ function ContactForm() {
               href="https://github.com/mousekeys"
               className="hover:underline"
             >
-              github.com/mousekeys
+              Github
             </a>
           </li>
           <li>
@@ -110,7 +110,7 @@ function ContactForm() {
               href="https://www.linkedin.com/in/sajal-poudel-10915a202"
               className="hover:underline"
             >
-            linkedin.com/sajal-poudel
+            Linkedin
             </a>
           </li>
         </ul>
