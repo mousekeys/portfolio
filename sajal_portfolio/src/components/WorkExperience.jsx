@@ -9,31 +9,37 @@ const experienceData = [
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4b1eeb5bfcb701bab675cc6f93b573aec12a2cd7410c3753a90f24e65568cd45?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "GPT",
     description: "A replica of GPT model from 'Attention is All You Need' paper by OpenAI with training done on shakespearian literature.",
+    link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Legal Sathi",
     description: "A RAG finetuned model using pdf documents of legal laws to provide information on the legal laws of Nepal.",
+    link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Keypoints",
     description: "A hand keypoint and face keypoint detection model using OpenCV and MediaPipe.",
+    link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Steganalysis",
     description: "Performing steganalysis on images using deepm image preprocessing and ML algorithms.",
+    link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Glaucoma",
     description: "Glaucoma detection with novel approach of utilizng biological optimization algorithms.",
+    link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Conflict",
     description: "ACLED dataset to predict conflict in Regions based on various factors.",
+    link:"https://www.google.com",
   },
 ];
 

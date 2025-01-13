@@ -44,7 +44,7 @@ const HeroSection = () => {
   
           <a
             href="#"
-            className="bg-gray-900 text-Red px-6 py-3 rounded-lg shadow-lg  hover:bg-purple-900  transition">
+            className="bg-transparent text-black px-6 py-3 rounded-lg shadow-lg  hover:bg-black hover:text-white hover:shadow-white transition">
             Github
           </a>
         </div>

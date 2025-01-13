@@ -17,18 +17,17 @@ function ContactForm() {
       message: message,
     };
 
-    emailjs
-      .send(
-        'your_service_id', // Replace with your service ID
-        'your_template_id', // Replace with your template ID
-        templateParams,
-        'your_user_id' // Replace with your user ID
+
+    emailjs.send(
+      'emp_706543', 
+      'template_os49ntr',
+      templateParams,
+        'PNWAFzrwCffB30Y1j'
       )
       .then(
         (result) => {
           console.log(result.text);
           alert('Message sent successfully!');
-          // Clear form fields after successful submission
           setName('');
           setEmail('');
           setMessage('');
@@ -94,7 +93,7 @@ function ContactForm() {
       <div className="mt-6 text-sm">
         <ul className="list-none">
           <li>
-            <a href="mailto:email@example.com" className="hover:underline">
+            <a href="mailto:sajalpoudel40@gmail.com" className="hover:underline">
               sajalpoudel40@gmail.com
             </a>
           </li>
