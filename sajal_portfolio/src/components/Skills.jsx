@@ -31,7 +31,7 @@ const Skills = () => {
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-3">
                   <img src={skill.imgSrc} alt={`${skill.name} icon`} className="w-6 h-6" />
-                  <span className="font-pixel text-xs text-foreground">{skill.name}</span>
+                  <span className="font-pixel text-xs text-foreground ">{skill.name}</span>
                 </div>
                 <span className="font-pixel text-xs text-accent">{skill.level}/100 XP</span>
               </div>
