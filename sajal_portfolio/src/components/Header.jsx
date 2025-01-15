@@ -29,7 +29,7 @@ const Header = () => {
         ${isScrolled ? 'bg-gradient-to-b from-gray-900 to-black' : 'bg-transparent'}
       `}
     >
-      <a href="/" className="text-2xl font-bold">
+      <a href="/" className="text-2xl font-bold hover:text-[#B098C8]">
         Sajal
       </a>
 

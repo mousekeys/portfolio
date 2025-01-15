@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className="w-[60%] h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-center">
-          <h1 className="mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg   hover:text-white hover:shadow-green-900 transition">
+          <h1 className="mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg   hover:text-white hover:shadow-purple-900 transition">
             Sajal Poudel
           </h1>
           <h2 className="text-4xl font-bold text-sm md:text-base text-foreground text-lg mb-8">
@@ -43,8 +43,8 @@ const HeroSection = () => {
       </h2>
   
           <a
-            href="#"
-            className="bg-transparent text-green-900 px-6 py-3 rounded-lg shadow-lg  hover:bg-black hover:text-white hover:shadow-white transition">
+            href="https://github.com/mousekeys"
+            className="bg-transparent text-[#A891C4] px-6 py-3 rounded-lg shadow-lg  hover:bg-black hover:text-white hover:shadow-purple-900 transition">
             Github
           </a>
         </div>
@@ -55,7 +55,7 @@ const HeroSection = () => {
       </div>
 
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-bg-[#150A25] opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#150A25] via-transparent to-bg-black opacity-50 z-0"></div>
     </section>
   );
 };
