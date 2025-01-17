@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 800);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -22,20 +9,20 @@ const Header = () => {
 
   return (
     <header
-      className={`
+      className="
         fixed top-0 left-0 w-full z-50 
         p-4 flex justify-between items-center 
-        text-white 
-        ${isScrolled ? 'bg-gradient-to-b from-gray-900 to-black' : 'bg-transparent'}
-      `}
+        text-gray-400 backdrop-filter backdrop-blur-md bg-black bg-opacity-70
+        transition-all duration-300
+      "
     >
-      <a href="/" className="text-2xl font-bold hover:text-[#B098C8]">
+      <a href="/" className=" text-2xl font-itallic hover:text-[#B098C8]">
         Sajal
       </a>
 
       {/* Hamburger menu for mobile */}
       <button
-        className="block md:hidden text-white focus:outline-none"
+        className="block md:hidden text-gray-400 focus:outline-none"
         onClick={toggleMenu}
       >
         <svg
@@ -65,8 +52,8 @@ const Header = () => {
 
       {/* Navigation links */}
       <nav
-        className={`
-          absolute top-full left-0 w-full bg-gray-900 transition-transform 
+        className={` 
+          absolute top-full left-0 w-full bg-gray-900 bg-opacity-80 transition-transform 
           transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} 
           md:relative md:top-auto md:left-auto md:w-auto md:bg-transparent md:transform-none
         `}
@@ -74,8 +61,8 @@ const Header = () => {
         <ul className="flex flex-col md:flex-row md:space-x-6 p-4 md:p-0">
           <li>
             <a
-              href="#portfolio"
-              className="block py-2 md:py-0 text-white hover:text-gray-400"
+              href="#hero"
+              className="block py-2 md:py-0 text-gray-400 hover:text-white"
             >
               Portfolio
             </a>
@@ -83,9 +70,17 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="block py-2 md:py-0 text-white hover:text-gray-400"
+              className="block py-2 md:py-0 text-gray-400 hover:text-white"
             >
               About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className="block py-2 md:py-0 text-gray-400 hover:text-white"
+            >
+              Projects
             </a>
           </li>
         </ul>
@@ -93,8 +88,8 @@ const Header = () => {
 
       {/* Contact button */}
       <a
-        href="#contact"
-        className="hidden md:inline-block bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-md"
+        href="#Contact"
+        className="hidden md:inline-block bg-blue-600  hover:text-white py-2 px-4 rounded-md"
       >
         Contact
       </a>

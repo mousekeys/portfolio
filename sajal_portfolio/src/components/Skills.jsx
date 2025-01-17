@@ -19,8 +19,8 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div className="bg-gradient-to-b from-[#17153B] to-[#2E236C] text-white p-4">
-      <h2 className="font-pixel text-xl md:text-2xl text-primary mb-10 text-center">STATS</h2>
+    <div className="bg-[#151515] text-white p-4">
+      <h2 className=" self-start text-4xl tracking-wider mx-auto text-center text-white text-primary mb-14 text-center">TECH STATS</h2>
       <div className="w-[80%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto">
         
         {/* Language Column */}

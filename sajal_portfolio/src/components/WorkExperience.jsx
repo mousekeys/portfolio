@@ -47,14 +47,14 @@ const experienceData = [
 const WorkExperience = () => {
   const starPoints = [
     { x: '5%', y: '10%' },
-    { x: '50%', y: '5%' },
-    { x: '7%', y: '60%' },
-    { x: '80%', y: '93%' },
-    { x: '90%', y: '25%' },
+    { x: '90%', y: '10%' },
+    { x: '4%', y: '60%' },
+    { x: '83%', y: '95%' },
+    { x: '94%', y: '25%' },
   ];
 
   return (
-    <div className="flex flex-col pt-28 pb-16 text-white bg-gradient-to-b from-black to-[#16153B] rounded-none max-md:pt-24 relative">
+    <div id="projects"className="flex flex-col pt-28 pb-16 text-white bg-gradient-to-b from-black to-[#151515] rounded-none max-md:pt-24 relative">
 
       <h1 className=" self-start text-4xl tracking-wider mx-auto text-center text-white">Inventory</h1>
       <div className="  mt-11 mx-auto max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
@@ -67,22 +67,7 @@ const WorkExperience = () => {
         </div>
       </div>
       
-      {starPoints.map((point, index) => (<div>
-        <img
-          key={index}
-          src={star}
-          alt="star"
-          className="absolute"
-          style={{
-            top: point.y,
-            left: point.x,
-            width: '50px',  
-            height: '50px', 
-            objectFit: 'contain'
-          }}
-        />
-        </div>
-      ))}
+   
        
 
     </div>
