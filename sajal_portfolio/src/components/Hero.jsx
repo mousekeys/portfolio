@@ -4,7 +4,7 @@ import backgroundImage from "../assets/t1.png";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
-  const fullText = "MLL ENGINEER / COMPUTER ENGINEER";
+  const fullText = "MLL DEVELOPER / COMPUTER ENGINEER";
   const indexRef = useRef(0); // To keep track of the current index without triggering renders
   
   useEffect(() => {
