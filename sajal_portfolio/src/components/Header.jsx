@@ -9,14 +9,10 @@ const Header = () => {
 
   return (
     <header
-      className="
-        fixed top-0 left-0 w-full z-50 
-        p-4 flex justify-between items-center 
-        text-gray-400 backdrop-filter backdrop-blur-md bg-black bg-opacity-70
-        transition-all duration-300
-      "
+      className="fixed top-0 left-0 w-full z-50 p-4 flex justify-between items-center text-gray-400 backdrop-filter backdrop-blur-md bg-black bg-opacity-70 transition-all duration-300"
     >
-      <a href="/" className=" text-2xl font-itallic hover:text-[#B098C8]">
+      {/* Display only "Sajal" on small screens */}
+      <a href="/" className="text-2xl font-italic hover:text-[#B098C8] md:hidden">
         Sajal
       </a>
 
@@ -50,46 +46,33 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Navigation links */}
+      {/* Navigation links for larger screens */}
       <nav
-        className={` 
-          absolute top-full left-0 w-full bg-gray-900 bg-opacity-80 transition-transform 
-          transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} 
-          md:relative md:top-auto md:left-auto md:w-auto md:bg-transparent md:transform-none
-        `}
+        className={`absolute top-full left-0 w-full bg-gray-900 bg-opacity-80 transition-transform transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} md:relative md:top-auto md:left-auto md:w-auto md:bg-transparent md:transform-none`}
       >
         <ul className="flex flex-col md:flex-row md:space-x-6 p-4 md:p-0">
           <li>
-            <a
-              href="#hero"
-              className="block py-2 md:py-0 text-gray-400 hover:text-white"
-            >
+            <a href="#hero" className="block py-2 md:py-0 text-gray-400 hover:text-white">
               Portfolio
             </a>
           </li>
           <li>
-            <a
-              href="#about"
-              className="block py-2 md:py-0 text-gray-400 hover:text-white"
-            >
+            <a href="#about" className="block py-2 md:py-0 text-gray-400 hover:text-white">
               About
             </a>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="block py-2 md:py-0 text-gray-400 hover:text-white"
-            >
+            <a href="#projects" className="block py-2 md:py-0 text-gray-400 hover:text-white">
               Projects
             </a>
           </li>
         </ul>
       </nav>
 
-      {/* Contact button */}
+      {/* Contact button for larger screens */}
       <a
         href="#Contact"
-        className="hidden md:inline-block bg-blue-600  hover:text-white py-2 px-4 rounded-md"
+        className="hidden md:inline-block bg-blue-600 hover:text-white py-2 px-4 rounded-md"
       >
         Contact
       </a>

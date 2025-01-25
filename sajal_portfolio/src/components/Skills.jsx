@@ -29,14 +29,14 @@ const TechnicalSkills = () => {
   return (
     <div className="bg-black">
     <section className=" py-16 px-4 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">
+      <h2 className="text-3xl font-bold text-center mb-12 text-white">
         Technical Skills
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {skillCategories.map((category, index) => (
           <div
             key={index}
-            className="p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 hover:scale-105 bg-black"
+            className="p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 bg-gray-800"
           >
             <div className="flex items-center  gap-3 mb-4">
               <div className="text-blue-800">{category.icon}</div>
