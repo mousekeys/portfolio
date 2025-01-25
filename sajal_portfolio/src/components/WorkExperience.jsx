@@ -27,7 +27,7 @@ const experienceData = [
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Steganalysis",
     description: "Performing steganalysis on images using deepm image preprocessing and ML algorithms.",
-    link:"https://www.google.com",
+    link:"https://github.com/cruvss/Image-Steganalysis-Using-Ensemble-Classifiers",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
@@ -45,20 +45,13 @@ const experienceData = [
 
 
 const WorkExperience = () => {
-  const starPoints = [
-    { x: '5%', y: '10%' },
-    { x: '90%', y: '10%' },
-    { x: '4%', y: '60%' },
-    { x: '83%', y: '95%' },
-    { x: '94%', y: '25%' },
-  ];
 
   return (
-    <div id="projects"className="flex flex-col pt-28 pb-16 text-white bg-gradient-to-b from-black to-[#151515] rounded-none max-md:pt-24 relative">
+    <div id="projects"className="flex flex-col pt-28 pb-16 text-white bg-black rounded-none max-md:pt-24 relative">
 
       <h1 className=" self-start text-4xl tracking-wider mx-auto text-center text-white">Inventory</h1>
-      <div className="  mt-11 mx-auto max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
-        <div className="w-[80%] mx-auto grid grid-cols-2 gap-5 max-md:grid-cols-1">
+      <div className="  mt-11 mx-auto max-md:mt-10 max-md:mr-0.5 max-md:max-w-full hover:shadow-white">
+        <div className="w-[80%] mx-auto grid grid-cols-2 gap-5 max-md:grid-cols-1 ">
           {experienceData.map((experience, index) => (
             <div key={index} className="flex flex-col">
               <ExperienceCard {...experience} />

@@ -1,97 +1,66 @@
-const skills = {
-  language: [
-    { name: "PYTHON", level: 95, imgSrc: "path_to_python_image.jpg" },
-    { name: "JAVA", level: 88, imgSrc: "path_to_java_image.jpg" },
-    { name: "JAVASCRIPT", level: 85, imgSrc: "path_to_javascript_image.jpg" },
-  ],
-  framework: [
-    { name: "TENSORFLOW", level: 88, imgSrc: "path_to_tensorflow_image.jpg" },
-    { name: "PYTORCH", level: 85, imgSrc: "path_to_pytorch_image.jpg" },
-    { name: "KUBERNETES", level: 90, imgSrc: "path_to_kubernetes_image.jpg" },
-    { name: "TENSORFLOW", level: 88, imgSrc: "path_to_tensorflow_image.jpg" },
-  ],
-  database: [
-    { name: "MYSQL", level: 80, imgSrc: "path_to_mysql_image.jpg" },
-    { name: "MONGO DB", level: 70, imgSrc: "path_to_mongo_image.jpg" },
-    { name: "POSTGRESQL", level: 85, imgSrc: "path_to_postgresql_image.jpg" },
-  ],
-};
+import React from "react";
+import { Briefcase, Code, Computer, Github, Laptop, Terminal } from "lucide-react";
 
-const Skills = () => {
+
+const skillCategories = [
+  {
+    title: "Language",
+    icon: <Code className="w-6 h-6" />,
+    skills: ["Python","Matlab","C", "C++",,"Javascript","React"],
+  },
+  {
+    title: "Databases",
+    icon: <Terminal className="w-6 h-6" />,
+    skills: ["SQL", "MongoDB", "Supabase", "RESTful APIs"],
+  },
+  {
+    title: "Frameworks",
+    icon: <Computer className="w-6 h-6" />,
+    skills: ["PyTorch","Pyspark", "TensorFlow", "pandas","numpy", "sklearn"],
+  },
+  {
+    title: "Development Tools",
+    icon: <Laptop className="w-6 h-6" />,
+    skills: ["Git", "VS Code","Linux servers","Docker"],
+  },
+];
+
+const TechnicalSkills = () => {
   return (
-    <div className="bg-[#151515] text-white p-4">
-      <h2 className=" self-start text-4xl tracking-wider mx-auto text-center text-white text-primary mb-14 text-center">TECH STATS</h2>
-      <div className="w-[80%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto">
-        
-        {/* Language Column */}
-        <div className="flex flex-col">
-          <h3 className="font-pixel text-lg text-primary text-center mb-6">Languages</h3>
-          {skills.language.map((skill) => (
-            <div key={skill.name} className="flex flex-col mb-8">
-              <div className="flex justify-between items-center mb-3">
-                <div className="flex items-center gap-3">
-                  <img src={skill.imgSrc} alt={`${skill.name} icon`} className="w-6 h-6" />
-                  <span className="font-pixel text-xs text-foreground ">{skill.name}</span>
-                </div>
-                <span className="font-pixel text-xs text-accent">{skill.level}/100 XP</span>
-              </div>
-              <div className="h-8 bg-white-400 border-2 border-primary w-full mx-auto">   
-                <div
-                  className="h-full bg-gradient-to-r from-red-400 to-purple-900 bg-primary transition-all duration-1000"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
+    <div className="bg-black">
+    <section className=" py-16 px-4 max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">
+        Technical Skills
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {skillCategories.map((category, index) => (
+          <div
+            key={index}
+            className="p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 hover:scale-105 bg-white"
+          >
+            <div className="flex items-center  gap-3 mb-4">
+              <div className="text-blue-800">{category.icon}</div>
+              <h3 className="font-semibold text-lg text-[#A78BFA] mx-auto ">
+                {category.title}
+              </h3>
             </div>
-          ))}
-        </div>
-
-        {/* Framework Column */}
-        <div className="flex flex-col">
-          <h3 className="font-pixel text-lg text-primary text-center mb-6">Frameworks</h3>
-          {skills.framework.map((skill) => (
-            <div key={skill.name} className="flex flex-col mb-8">
-              <div className="flex justify-between items-center mb-3">
-                <div className="flex items-center gap-3">
-                  <img src={skill.imgSrc} alt={`${skill.name} icon`} className="w-6 h-6" />
-                  <span className="font-pixel text-xs text-foreground">{skill.name}</span>
-                </div>
-                <span className="font-pixel text-xs text-accent">{skill.level}/100 XP</span>
-              </div>
-              <div className="h-8 bg-white-400 border-2 border-primary w-full mx-auto">   
-                <div
-                  className="h-full bg-gradient-to-r from-red-400 to-purple-900 bg-primary transition-all duration-1000"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Database Column */}
-        <div className="flex flex-col">
-          <h3 className="font-pixel text-lg text-primary text-center mb-6">Databases</h3>
-          {skills.database.map((skill) => (
-            <div key={skill.name} className="flex flex-col mb-8">
-              <div className="flex justify-between items-center mb-3">
-                <div className="flex items-center gap-3">
-                  <img src={skill.imgSrc} alt={`${skill.name} icon`} className="w-6 h-6" />
-                  <span className="font-pixel text-xs text-foreground">{skill.name}</span>
-                </div>
-                <span className="font-pixel text-xs text-accent">{skill.level}/100 XP</span>
-              </div>
-              <div className="h-8 bg-white-400 border-2 border-primary w-full mx-auto">   
-                <div
-                  className="h-full bg-gradient-to-r from-red-400 to-purple-900 bg-primary transition-all duration-1000"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-
+            <ul className="space-y-2">
+              {category.skills.map((skill, skillIndex) => (
+                <li
+                  key={skillIndex}
+                  className="text-slate-600 text-sm flex items-center gap-2"
+                >
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
+    </section>
     </div>
   );
 };
 
-export default Skills;
+export default TechnicalSkills;

@@ -40,7 +40,7 @@ function ContactForm() {
   };
 
   return (
-    <div id= "Contact" className="bg-gradient-to-b from-[#151515] to-[#301B3F] text-white p-6 rounded-lg justify-between items-center ">
+    <div id= "Contact" className="bg-black text-white p-6 rounded-lg justify-between items-center ">
       <div className='bg-gray-800 w-[62%] mx-auto p-6 rounded-lg justify-between items-center'>
       <h1 className="text-2xl font-bold mb-4  mx-auto">CONTACT</h1>
       <p className="mb-6">Would you like to start a new quest together?</p>
@@ -55,7 +55,7 @@ function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 rounded-md text-black focus:outline-none focus:border-indigo-500"
+            className="w-full px-3 py-2 border border-gray-700 rounded-md text-black focus:outline-none focus:border-red-500"
           />
         </div>
         <div>
@@ -68,7 +68,7 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-indigo-500"
+            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-red-500"
           />
         </div>
         <div>
@@ -80,12 +80,12 @@ function ContactForm() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-indigo-500 h-24"
+            className="w-full px-3 py-2 border border-gray-700 text-black rounded-md focus:outline-none focus:border-red-500 h-24"
           />
         </div>
         <button
           type="submit"
-          className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-md"
+          className="bg-gray-900 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md"
         >
           SEND MESSAGE
         </button>
