@@ -36,7 +36,7 @@ const TechnicalSkills = () => {
         {skillCategories.map((category, index) => (
           <div
             key={index}
-            className="p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 hover:scale-105 bg-white"
+            className="p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 hover:scale-105 bg-black"
           >
             <div className="flex items-center  gap-3 mb-4">
               <div className="text-blue-800">{category.icon}</div>

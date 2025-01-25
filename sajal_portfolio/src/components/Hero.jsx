@@ -34,12 +34,12 @@ const HeroSection = () => {
 
   return (
     <section id="hero"
-      className="relative w-100% bg-[#150A25] bg-fixed bg-center bg-cover text-white py-16 overflow-hidden"
+      className="relative w-full bg-[#150A25] bg-fixed bg-center bg-cover text-white py-16 overflow-hidden"
       style={{
         backgroundImage: `url(${backgroundImage})`, // Background image for parallax
       }}
     >
-      <div className="w-[60%] h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+      <div className="w-[80%] lg:w-[60%] h-screen container mx-auto flex flex-col lg:flex-row items-center relative z-10 pt-16 lg:pt-0">
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-center">
           <h1 className="mx-auto font-press text-5xl font-bold mb-6 leading-tight px-6 py-3 rounded-lg shadow-lg hover:text-white hover:shadow-purple-900 transition">
@@ -49,21 +49,19 @@ const HeroSection = () => {
             {text}
             <span className="animate-text-blink">_</span>
           </h2>
-          
         </div>
       </div>
 
       {/* Download CV icon */}
       <div className="mx-auto absolute right-10 bottom-40 z-20 flex flex-col items-center">
-  <button
-    onClick={handleDownloadCV}
-    className="flex items-center justify-center p-3 bg-purple-600 text-white rounded-full shadow-md hover:bg-purple-700 transition duration-300"
-  >
-    <FaDownload className="w-6 h-6" />
-  </button>
-  <span className="text-white mt-2">CV.pdf</span> {/* Add margin-top for spacing */}
-</div>
-
+        <button
+          onClick={handleDownloadCV}
+          className="flex items-center justify-center p-3 bg-purple-600 text-white rounded-full shadow-md hover:bg-purple-700 transition duration-300"
+        >
+          <FaDownload className="w-6 h-6" />
+        </button>
+        <span className="text-white mt-2">CV.pdf</span> {/* Add margin-top for spacing */}
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#150A25] via-transparent to-bg-black opacity-50 z-0"></div>
     </section>
