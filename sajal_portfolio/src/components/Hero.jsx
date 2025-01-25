@@ -52,15 +52,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Download CV icon */}
-      <div className="mx-auto absolute right-10 bottom-40 z-20 flex flex-col items-center">
+      {/* Download CV icon fixed to the bottom-right of the screen */}
+      <div className="fixed right-10 bottom-10 z-20 flex flex-col items-center">
         <button
           onClick={handleDownloadCV}
           className="flex items-center justify-center p-3 bg-purple-600 text-white rounded-full shadow-md hover:bg-purple-700 transition duration-300"
         >
           <FaDownload className="w-6 h-6" />
         </button>
-        <span className="text-white mt-2">CV.pdf</span> {/* Add margin-top for spacing */}
+        <span className="text-white mt-2">CV.pdf</span>
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#150A25] via-transparent to-bg-black opacity-50 z-0"></div>

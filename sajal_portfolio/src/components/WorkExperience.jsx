@@ -19,12 +19,12 @@ const experienceData = [
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
     title: "Keypoints",
-    description: "A hand keypoint and face keypoint detection model using OpenCV and MediaPipe.",
+    description: "Hand and Face keypoint detection model using OpenCV,MediaPipe while also performing image preprocessing to ensure better accuracy.",
     link:"https://www.google.com",
   },
   {
     imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e758e53bd2b0603c63f10857f81398043698cf00877c6c3ef3fb38611fc94f3?apiKey=8973cd7007234792a068b2cece109bce&",
-    title: "Steganalysis",
+    title: "Content Hidden",
     description: "Performing steganalysis on images using deepm image preprocessing and ML algorithms.",
     link:"https://github.com/cruvss/Image-Steganalysis-Using-Ensemble-Classifiers",
   },

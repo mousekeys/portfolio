@@ -41,7 +41,7 @@ function ContactForm() {
 
   return (
     <div id= "Contact" className="bg-black text-white p-6 rounded-lg justify-between items-center ">
-      <div className='bg-gray-800 w-[62%] mx-auto p-6 rounded-lg justify-between items-center'>
+      <div className='bg-gray-800 w-[70%] mx-auto p-6 rounded-lg justify-between items-center'>
       <h1 className="text-2xl font-bold mb-4  mx-auto">CONTACT</h1>
       <p className="mb-6">Would you like to start a new quest together?</p>
       <form onSubmit={handleSubmit} className="space-y-4">
