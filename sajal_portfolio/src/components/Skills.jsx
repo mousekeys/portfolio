@@ -38,9 +38,9 @@ const TechnicalSkills = () => {
             key={index}
             className="p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 bg-gray-800"
           >
-            <div className="flex items-center  gap-3 mb-4">
-              <div className="text-blue-800">{category.icon}</div>
-              <h3 className="font-semibold text-lg text-[#A78BFA] mx-auto ">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="text-blue-800 center ">{category.icon}</div>
+              <h3 className="font-semibold text-lg text-[#A78BFA]  ">
                 {category.title}
               </h3>
             </div>
