@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'game-over';
-  src: url('./assets/fonts/gameover.ttf') format('truetype');
+  font-family: 'Menlo';
+  
   font-weight: normal;
   font-style: normal;
 }

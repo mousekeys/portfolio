@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         
-        sans: [ "bold",'"game-over"'],
+        sans: ['"Georgia"'],
       },
     },
   },
