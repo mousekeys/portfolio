@@ -16,11 +16,10 @@ const App = () => {
   return (
     <Router>
       <div>
-
         <Header />
         <Hero />
         <About />
-        {/* <WorkExperience /> */}
+        <WorkExperience />
         <Skills />
         {/* <Blogs /> */}
         <FooterEmailForm />
