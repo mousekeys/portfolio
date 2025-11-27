@@ -12,12 +12,12 @@ const About = () => {
 
       {/* Buttons */}
       <div className="flex gap-4 mb-6">
-      <a
+      {/* <a
       href="/cv"
       className="bg-blue-700 text-white hover:bg-[#A78BFA] hover:text-gray-900  px-4 py-2 rounded-md shadow-md transition"
     >
       My CV
-    </a>
+    </a> */}
         <a
           href="/blog"
           className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md shadow-md transition"
